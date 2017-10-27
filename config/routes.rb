@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/pages/:id' => 'pages#show'
   get '/stores' => 'stores#index'
 
+  resources :products, only: [:index]
+
 end
